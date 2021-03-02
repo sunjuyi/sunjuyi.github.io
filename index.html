@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VIP视频免费看</title>
+<style>
+body {
+	width: 80%;
+	margin: 0 auto;
+	background: #e9ecef;
+}
+
+h1 {
+	text-align: center;
+	padding: 1em 0 0.5em;
+}
+
+form input {
+	width: 100%;
+	padding: 0.5em;
+	font-size: 1.5em;
+	background: #fff;
+	-webkit-appearance: none !important;
+	border-radius: 0 !important;
+	border: 1px solid #3399cc;
+}
+
+input[type="submit"] {
+	margin: 0.5em 0;
+	border: 0;
+	cursor: pointer;
+	color: #fff;
+	background-color: #1E9FFF;
+	border-color: #01AAED;
+}
+
+input[type="submit"]:hover {
+	color: #fff;
+	background-color: #01AAED;
+	border-color: #009688;
+}
+
+input:focus {
+	outline: 0;
+}
+</style>
+</head>
+<body>
+	<h1>VIP视频免费看</h1>
+	<form action="https://jx.quanmingjiexi.com/" target="_blank"
+		onSubmit="return beforeSubmit(this);">
+		<input type="search" placeholder="请输入视频URL" name="url"><br>
+		<br> <input type="submit" value="点击开始解析">
+	</form>
+	<script>
+		function beforeSubmit(form) {
+			if (form.url.value == '') {
+				alert('URL不能为空！');
+				form.url.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>
